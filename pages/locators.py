@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 
 class SbisMainPageLocators:
     CONTACTS_LINK = (By.CSS_SELECTOR, 'a.sbisru-Header__menu-link[href="/contacts"]')
+    DOWNLOAD_LINK = (By.CSS_SELECTOR, 'a.sbisru-Footer__link[href="/download"]')
 
 
 class SbisContactsPageLocators:
@@ -12,6 +13,11 @@ class SbisContactsPageLocators:
     PARTNER_LIST_CITY = (By.ID, 'city-id-2')
     PARTNER_NAME = (By.CLASS_NAME, 'sbisru-Contacts-List__name')
     CHOOSE_REGION_LINK = (By.XPATH, '//*[contains(text(), "Камчатский край")]')
+
+
+class SbisDownloadPageLocators:
+    PLUGIN_LINK = (By.CSS_SELECTOR, '[data-id="plugin"]')
+    WEB_INSTALLER_LINK = (By.PARTIAL_LINK_TEXT, 'Exe')
 
 
 class TensorMainPageLocators:
